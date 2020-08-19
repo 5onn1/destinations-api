@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "name": "destination"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "imageHeader": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "experiences": {
+      "via": "destination",
+      "collection": "experience"
+    }
+  }
+}
